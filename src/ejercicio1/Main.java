@@ -32,7 +32,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    ProcesosDao.visualizarInformacion(empleado);
+                    ProcesosDao.VisualizarInformacion(empleado);
                     break;
                 case 2:
                     System.out.print("Ingrese el nuevo salario del empleado: ");

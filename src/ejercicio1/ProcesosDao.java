@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class ProcesosDao {
-    private ArrayList<Empleado> empleados;
+    private static ArrayList<Empleado> empleados;
 
     ProcesosDao(){
         empleados = new ArrayList<>();
@@ -17,7 +17,7 @@ public class ProcesosDao {
         empleados.add(empleado);
     }
 
-    public void visualizarInformacion(Empleado empleado) {
+    public static void VisualizarInformacion(Empleado empleado) {
         String info = "Nombre: " + empleado.getNombre() + "\n"
                 + "Apellido: " + empleado.getApellido() + "\n"
                 + "Genero: " + empleado.getGenero() + "\n"
@@ -27,7 +27,7 @@ public class ProcesosDao {
         System.out.println(info);
     }
 
-    public void modificarSalario(Empleado empleado, double nuevoSalario) {
+    public void ModificarSalario(Empleado empleado, double nuevoSalario) {
         empleado.setSalarioBasico(nuevoSalario);
     }
 
